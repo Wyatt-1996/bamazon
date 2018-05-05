@@ -4,15 +4,15 @@ USE bamazonDB;
 
 CREATE TABLE products (
     -- unique id number for each new product added
-    item_id INT(1000) AUTO_INCREMENT NOT NULL;
+    item_id INT(100) AUTO_INCREMENT NOT NULL,
     -- name of product (up to 100 char)
-    product_name VARCHAR(100) NOT NULL;
+    product_name VARCHAR(100) NOT NULL,
     -- department (category)
-    department_name VARCHAR(100) NOT NULL;
+    department_name VARCHAR(100) NOT NULL,
     -- item price to customer
-    price INT(1000) NOT NULL;
+    price INT(10) NOT NULL,
     -- quantity of product in stock
-    stock_quantity INT(1000) NOT NULL;
+    stock_quantity INT(10) NOT NULL,
     -- all data contained within item_id will be unique
     PRIMARY KEY (item_id)
 );
@@ -32,5 +32,5 @@ VALUES ("xbox", "electronics", 300, 150),
        ("watermelon", "food", 4, 30);
 
 -- select following things from table
-SELECT item_id, product_name, price
-FROM products;
+-- SELECT item_id, product_name, price
+-- FROM products;
